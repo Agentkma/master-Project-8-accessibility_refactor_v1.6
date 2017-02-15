@@ -1,0 +1,105 @@
+/* Survey page styles */
+
+/* Element styles */
+
+button {
+  background-color: #3A6355;
+  width: 7.5em;
+  height: 4em;
+  border-radius: 5px;
+  margin-top: 1em;
+  text-transform: uppercase;
+  color:yellow;
+  font-size: 1.1em;
+}
+
+fieldset {
+  border: none;
+  display: block;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display:block;
+}
+
+input,
+textarea {
+  display: block;
+}
+
+label > input {
+  display:inline-block;
+
+}
+
+legend {
+  font-size: 1.5em;
+}
+
+
+select {
+  background-color: white;
+  font-size:  1.25em;
+}
+
+
+
+
+
+
+/* Hover & Focus State styles */
+
+label:hover,
+label:focus,
+textarea:hover,
+textarea:focus,
+input:hover,
+input:focus,
+button:hover,
+button:focus {
+  cursor:pointer;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: #781125;
+  outline-width: 5px;
+  border: 1px solid #781125;
+}
+
+/* Class styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: left;
+
+}
+
+/* ID styles */
+#name,
+#email,
+#email2,
+textarea {
+  border-radius: 5px;
+  height: 4em;
+}
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}
