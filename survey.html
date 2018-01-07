@@ -1,45 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/survey.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <title>Accessible Frog</title>
-  </head>
+</head>
 
-  <body>
-    <div class="main-nav" role="navigation">
-      <ul class="nav">
-        <li class="name"><a href="index.html">Accessible Frog</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="#">Survey</a></li>
-      </ul>
-    </div>
+<body>
+    <nav class="main-nav" role="navigation">
+        <ul class="nav">
+            <li class="name"><a href="index.html">Accessible Frog</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="#">Survey</a></li>
+        </ul>
+    </nav>
 
     <header role="banner">
-      <p id="banner-title">ACCESSIBLE FROG </p>
-      <p id="banner-subtitle"> we make awesome music</p>
+        <p id="banner-title">ACCESSIBLE FROG </p>
+        <p id="banner-subtitle"> we make awesome music</p>
     </header>
 
     <main role="main">
-      <h1 class= "heading">Survey</h1>
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="pic of band performing with large crowd of people with arms raised and the band in the background surrounded by shining stage lights and foggy smoke">
-          <div class="container">
-            <form class="survey" role="search">
-              <fieldset>
-                <legend>Take Our Survey</legend>
-                <p><label>Who is your favorite band member:</label></p>
-                <p><label for="Bob"><input type="radio" name="res" value="Bob" id="Bob"> Bob</label></p>
-                <p><label for="Hazzard"><input type="radio" name="res" value="Hazzard" id="Hazzard"> Hazzard</label></p>
-                <p><label for="John"><input type="radio" name="res" value="John" id="John"> John</label></p>
-                <p><label for="Sally"><input type="radio" name="res" value="Sally" id="Sally"> Sally</label></p>
+        <h1 class="heading">Survey</h1>
+        <div class="card">
+            <div class="flex">
+                <img class="photo" src="img/concert01.jpg" alt="pic of band performing with large crowd of people with arms raised and the band in the background surrounded by shining stage lights and foggy smoke">
+                <div class="container">
+                    <form class="survey" role="search">
+                        <fieldset>
+                            <legend tabindex="0">Take Our Survey</legend>
+                            <p><label tabindex="0">Who is your favorite band member:</label></p>
+                            <p><label for="Bob"><input type="radio" name="res" value="Bob" id="Bob"> Bob</label></p>
+                            <p><label for="Hazzard"><input type="radio" name="res" value="Hazzard" id="Hazzard"> Hazzard</label></p>
+                            <p><label for="John"><input type="radio" name="res" value="John" id="John"> John</label></p>
+                            <p><label for="Sally"><input type="radio" name="res" value="Sally" id="Sally"> Sally</label></p>
 
-                <p><label for="albums">What is your favorite album:</label></p>
-                <select id="albums" name="select">
+                            <p><label for="albums">What is your favorite album:</label></p>
+                            <select id="albums" name="select">
                   <option value="1">A Day Of Old </option>
                   <option value="2">Diamond Fireworks</option>
                   <option value="3">Enjoy Your Desire</option>
@@ -53,40 +54,45 @@
                   <option value="11">This Is For You</option>
                 </select>
 
-                <p><label for="textarea">What is your favorite song:</label></p>
-                <textarea id="textarea"></textarea>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-      </div>
-      <h1 class= "heading">Newsletter</h1>
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt="pic of the bass player to the left and drummer to right playing on stage">
-            <div class="container">
-              <form class="newsletter" action="http//www.somewebsite.com" method="post">
-                  <fieldset>
-                    <legend>Get Our Newsletter</legend>
-                    <p><label for="name" >Name:</label></p> <input type ="text" name="textfield" id="name" aria-describedby="Full-Name" ><p id="Full-Name" > Type your full name with a space between names</p>
-                    <p><label for="email">Email:</label></p> <input type ="email" name="textfield" id="email">
-                    <p><label for="email2">Retype Email: </label></p><input type ="email" name="textfield" id="email2">
-                    <button id="submit-button" type="submit" aria-describedby="sign-up" >Sign Up</button>
-                    <p id="sign-up">When the Sign Up Button is clicked the survey and email info will be sent to us.</p>
-                  </fieldset>
-              </form>
+                            <p><label for="textarea">What is your favorite song:</label></p>
+                            <textarea id="textarea"></textarea>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
-      </div>
+        <h1 class="heading">Newsletter</h1>
+        <div class="card">
+            <div class="flex">
+                <img class="photo" src="img/the_band.jpg" alt="pic of the bass player to the left and drummer to right playing on stage">
+                <div class="container">
+                    <form class="newsletter" action="http//www.somewebsite.com" method="post">
+                        <fieldset>
+                            <legend>Get Our Newsletter</legend>
+                            <p><label for="name">Name:</label></p> <input type="text" name="textfield" id="name" aria-describedby="Full-Name">
+                            <p id="Full-Name"> Type your full name with a space between names</p>
+                            <p><label for="email">Email:</label></p> <input type="email" name="textfield" id="email">
+                            <p><label for="email2">Retype Email: </label></p><input type="email" name="textfield" id="email2">
+                            <button id="submit-button" type="submit" aria-describedby="sign-up">Sign Up</button>
+                            <p id="sign-up">When the Sign Up Button is clicked the survey and email info will be sent to us.</p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer role="contentinfo">
-      <ul>
-        <li> <p class="social_alt_text">Twitter logo which is bird shape</p><a href="#" class="social twitter" title="twitter icon"></a></li>
-        <li><p class="social_alt_text">Youtube logo which is the text You above the text Tube</p><a href="#" class="social youtube" title="youtube icon"></a></li>
-        <li><p class="social_alt_text">Spotify logo which is a circle with 3 semi-curved paralel lines inside</p> <a href="#" class="social spotify" title="spotify icon"> </a></li>
-      </ul>
-      <p class="copyright">Copyright 2017, Accessible Frog</p>
+        <ul>
+            <li>
+                <p class="social_alt_text">Twitter logo which is bird shape</p><a href="#" class="social twitter" title="twitter icon"></a></li>
+            <li>
+                <p class="social_alt_text">Youtube logo which is the text You above the text Tube</p><a href="#" class="social youtube" title="youtube icon"></a></li>
+            <li>
+                <p class="social_alt_text">Spotify logo which is a circle with 3 semi-curved paralel lines inside</p> <a href="#" class="social spotify" title="spotify icon"> </a></li>
+        </ul>
+        <p class="copyright">Copyright 2017, Accessible Frog</p>
     </footer>
-  </body>
+</body>
+
 </html>
